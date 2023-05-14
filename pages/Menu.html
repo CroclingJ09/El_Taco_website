@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de menu du restaurant El Taco Del Pablo">
+    <meta name="description" content="Page des menus du restaurant">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Menus</title>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div id="logo"><a href="#main-menu"><img src="../media/logo.png" alt="Image logo"></a></div>
+        <div id="absolute">
+            <nav id="menu">
+                <ul>
+                    <li><a href="../Index.html">Accueil</a></li>
+                    <li><a href="Who_are_we.html">Qui sommes-nous?</a></li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="Command.html">Commander</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="toggle" onClick="menu()">
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <article>
+        <!-- Bannière -->
+        <section id="main-menu" class="main">
+            <h1>Menus</h1>
+        </section>
+        <section id="menu-list">
+            <!-- Best-Sellers -->
+            <h2>Nos best-sellers</h2>
+            <article>
+                <img src="../media/tacos/beef-tacos.png" alt="image menu carne de vacuno" class="img-food">
+                <h3>Menu <strong>Carne de Vacuno</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="1">
+                <div class="drop" id="drop1">
+                    <p>2 Tacos avec viande de boeuf <i>(suppléments au choix)</i></p>
+                    <p>1 Frite ou 1 Nachos <i>(sauce au choix)</i></p>
+                    <p>1 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <article>
+                <img src="../media/tacos/pork-tacos.png" alt="image menu carne de cerdo" class="img-food">
+                <h3>Menu <strong>Carne de Cerdo</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="2">
+                <div class="drop" id="drop2">
+                    <p>2 Tacos avec viande de porc <i>(suppléments au choix)</i></p>
+                    <p>1 Frite ou 1 Nachos <i>(sauce au choix)</i></p>
+                    <p>1 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <article>
+                <img src="../media/tacos/chicken-tacos.png" alt="image menu carne de cerdo" class="img-food">
+                <h3>Menu <strong>Carne de Pollo</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="3">
+                <div class="drop" id="drop3">
+                    <p>2 Tacos avec viande de poulet <i>(suppléments au choix)</i></p>
+                    <p>1 Frite ou 1 Nachos <i>(sauce au choix)</i></p>
+                    <p>1 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <article>
+                <img src="../media/tacos/crunchy-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Menu <strong>Crujiente</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="4">
+                <div class="drop" id="drop4">
+                    <p>2 Tacos avec tortilla croustillante <i>(suppléments au choix)</i></p>
+                    <p>1 frite ou 1 nachos <i>(sauce au choix)</i></p>
+                    <p>1 boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <!-- Nouveautés -->
+            <h2>Nos nouveautés</h2>
+            <article>
+                <img src="../media/tacos/spicy-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Menu <strong>Pimiento de Fuego</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="5">
+                <div class="drop" id="drop5">
+                    <p>2 Tacos au piment <i>(suppléments au choix)</i></p>
+                    <p>1 Nachos <i>(sauce au choix)</i></p>
+                    <p>1 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <article>
+                <img src="../media/tacos/fish-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Menu <strong>Mar Abierto</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="6">
+                <div class="drop" id="drop6">
+                    <p>2 Tacos au poisson pané <i>(suppléments au choix)</i></p>
+                    <p>1 Frite <i>(sauce au choix)</i></p>
+                    <p>1 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <!-- Menus familiaux -->
+            <h2>Nos menus familiaux</h2>
+            <article>
+                <img src="../media/tacos/family-beef-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Menu <strong>Vacuno Familia</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="7">
+                <div class="drop" id="drop7">
+                    <p>10 Tacos au boeuf <i>(suppléments au choix)</i></p>
+                    <p>4 Frites ou Nachos <i>(sauce au choix)</i></p>
+                    <p>4 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <article>
+                <img src="../media/tacos/family-chicken-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Menu <strong>Pollo Familia</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="8">
+                <div class="drop" id="drop8">
+                    <p>10 Tacos au poulet <i>(suppléments au choix)</i></p>
+                    <p>4 Frites ou Nachos <i>(sauce au choix)</i></p>
+                    <p>4 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <article>
+                <img src="../media/tacos/big-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Menu <strong>Gran Familia</strong></h3>
+                <img src="../media/arrow_icon.svg" alt="arrow open" class="arrow" onclick="flip(this)" data-element="9">
+                <div class="drop" id="drop9">
+                    <p>14 Tacos <i>(viandes et suppléments au choix)</i></p>
+                    <p>6 Frites ou Nachos <i>(sauce au choix)</i></p>
+                    <p>6 Boisson</p>
+                    <a href="Command.html">Commander</a>
+                </div>
+            </article>
+            <!-- Tacos -->
+            <h2>Nos tacos</h2>
+            <article>
+                <img src="../media/tacos/single-beef-taco.png" alt="image menu queso grande" class="img-food">
+                <h3>Tacos <strong>Boeuf</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+            <article>
+                <img src="../media/tacos/single-pork-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Tacos <strong>Porc</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+            <article>
+                <img src="../media/tacos/single-chicken-taco.png" alt="image menu queso grande" class="img-food">
+                <h3>Tacos <strong>Poulet</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+            <article>
+                <img src="../media/tacos/single-spicy-tacos.png" alt="image menu queso grande" class="img-food">
+                <h3>Tacos <strong>Piment</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+            <article>
+                <img src="../media/tacos/single-fish-taco.png" alt="image menu queso grande" class="img-food">
+                <h3>Tacos <strong>Poisson</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+            <!-- Suppléments -->
+            <h2>Nos suppléments</h2>
+            <article>
+                <img src="../media/tacos/Fries.png" alt="image menu queso grande" class="img-food">
+                <h3><strong>Frites</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+            <article>
+                <img src="../media/tacos/nachos.png" alt="image menu queso grande" class="img-food">
+                <h3><strong>Nachos</strong></h3>
+                <a href="Command.html">Commander</a>
+            </article>
+        </section>
+    </article>
+    <!-- Pied-de-page -->
+    <footer>
+        <section id="adress">
+            <h3>Nous contacter</h3>
+            <p>Chemin des Saules 19</p>
+            <p>2013 Colombier</p>
+            <p>+41 79 268 54 51</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.665392946913!2d6.865839015855837!3d46.96826393984701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478de054a2bd329b%3A0xd04d1487b263d6f1!2sChem.%20des%20Saules%2019%2C%202013%20Colombier!5e0!3m2!1sfr!2sch!4v1675778286984!5m2!1sfr!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social">
+            <a href="#"><img src="../media/facebook.svg" alt="lien facebook"></a>
+            <a href="#"><img src="../media/instagram.svg" alt="lien instagram"></a>
+            <a href="#"><img src="../media/linkedin.svg" alt="lien linkedin"></a>
+        </section>
+        <p id="copyright">© EL Taco del Pablo - All rights reserved</p>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript">
+		function menu(){
+			var menu_mobile=document.getElementById("menu"); /* Sélectionne la balise ayant l'ID "menu" dans la variable menu_mobile */
+			menu_mobile.classList.toggle("open"); /* Applique ou retire la classe "open" à la balise sélectionné précédement */
+            var abso_open=document.getElementById("absolute"); /* Sélectionne la balise ayant l'ID "absolute" dans la variable abso_open */
+            abso_open.classList.toggle("open_a"); /* Applique ou retire la classe "open_a" à la balise sélectionné précédement */
+		}
+
+        function flip(e){ /* e=objet cliqué */
+            e.classList.toggle("flip"); /* Applique ou retire la classe flip à l'élément e */
+            var drop=e.dataset.element; /* Définit la valeur drop par le data-element de e */
+            var drop_e=document.getElementById("drop" + drop); /* définit la valeur drop_e par l'ID "drop + le data-element de l'objet cliqué" */
+            drop_e.classList.toggle("drop-a"); /* Applique ou retire la classe "drop-a" à la balise sélectionné précédement */
+        }
+	</script>
+</body>
+</html>

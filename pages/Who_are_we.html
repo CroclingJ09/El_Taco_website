@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de présentation du restaurant">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Qui sommes-nous?</title>
+</head>
+<body>
+    <!-- En-tête et menu -->
+    <header>
+        <div id="logo"><a href="#main-who"><img src="../media/logo.png" alt="Image logo"></a></div>
+        <div id="absolute">
+            <nav id="menu">
+                <ul>
+                    <li><a href="../Index.html">Accueil</a></li>
+                    <li><a href="#">Qui sommes-nous?</a></li>
+                    <li><a href="Menu.html">Menus</a></li>
+                    <li><a href="Command.html">Commander</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="toggle" onClick="menu()"> <!-- Active la fonction "menu" quand on clique dessus -->
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <article>
+        <!-- Bannière -->
+        <section id="main-who" class="main">
+            <h1>Qui sommes-nous?</h1>
+        </section>
+        <!-- Blocs de présentation -->
+        <section class="second-who" >
+            <h2>Une tradition bien gardée</h2>
+            <p>Installé dans le canton de Neuchâtel depuis le début des années 2000, notre restaurant familial El Taco del Pablo vous propose ses services de restaurations, et son ambiance joyeuse et chalereuse. Nos recettes de tacos sont transmises dans notre famille de générations en générations, afin de vous proposer des plats uniques.</p>
+            <img src="../media/tortilla.jpg" alt="Image tortilla">
+        </section>
+        <section class="second-who right" >
+            <h2>Des produits frais</h2>
+            <p>Nous travaillons étroitement avec les porducteurs locaux afin de vous fournir les meilleurs tacos possibles. Pour les produits non-diponible sur le sol helvétique, nous essayons de travailler au maximum avec des productueurs mexicains pour assurer une authenticité parfaite de nos tacos.</p>
+            <img src="../media/peppers.jpg" alt="Image poivrons">
+        </section>
+        <section class="second-who" >
+            <h2>Une attention aux clients</h2>
+            <p>Le bonheur de notre clientelle est notre priorité absolue. Nous nous assurons que nos plats soient à votre goût, peu importe la saison. Nos menus sont entièrements personnalisable à votre guise. Nous vous proposons également des menus à partager en famille à un tarif abordable pour tous.</p>
+            <img src="../media/tacos-in-plate.jpg" alt="Image tacos dans une assiette">
+        </section>
+    </article>
+    <!-- Pied-de-page -->
+    <footer>
+        <section id="adress">
+            <h3>Nous contacter</h3>
+            <p>Chemin des Saules 19</p>
+            <p>2013 Colombier</p>
+            <p>+41 79 268 54 51</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.665392946913!2d6.865839015855837!3d46.96826393984701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478de054a2bd329b%3A0xd04d1487b263d6f1!2sChem.%20des%20Saules%2019%2C%202013%20Colombier!5e0!3m2!1sfr!2sch!4v1675778286984!5m2!1sfr!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social">
+            <a href="#"><img src="../media/facebook.svg" alt="lien facebook"></a>
+            <a href="#"><img src="../media/instagram.svg" alt="lien instagram"></a>
+            <a href="#"><img src="../media/linkedin.svg" alt="lien linkedin"></a>
+        </section>
+        <p id="copyright">© EL Taco del Pablo - All rights reserved</p>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript">
+		function menu(){
+			var menu_mobile=document.getElementById("menu"); /* Sélectionne la balise ayant l'ID "menu" dans la variable menu_mobile */
+			menu_mobile.classList.toggle("open"); /* Applique ou retire la classe "open" à la balise sélectionné précédement */
+            var abso_open=document.getElementById("absolute"); /* Sélectionne la balise ayant l'ID "absolute" dans la variable abso_open */
+            abso_open.classList.toggle("open_a"); /* Applique ou retire la classe "open_a" à la balise sélectionné précédement */
+		}
+	</script>
+</body>
+</html>

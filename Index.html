@@ -1,0 +1,78 @@
+<html lang="fr">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'accueil du restaurant El Taco Del Pablo">
+    <link rel="stylesheet" href="css/style.css">
+    <title>El Taco del Pablo: Tacos Mexicains à Neuchâtel</title>
+</head>
+<body>
+    <!-- En-tête et menu -->
+    <header>
+        <div id="logo"><a href="#"><img src="media/logo.png" alt="Image logo"></a></div>
+        <div id="absolute">
+            <nav id="menu">
+                <ul>
+                    <li><a href=".main">Accueil</a></li>
+                    <li><a href="pages/Who_are_we.html">Qui sommes-nous?</a></li>
+                    <li><a href="pages/Menu.html">Menus</a></li>
+                    <li><a href="pages/Command.html">Commander</a></li>
+                    <li><a href="pages/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="toggle" onClick="menu()"> <!-- Active la fonction "menu" quand on clique dessus -->
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <article>
+        <!-- Bannière -->
+        <section id="main" class="main">
+            <h1>Le meilleur de la cuisine mexicaine </h1>
+            <a href="#">Accéder à la carte</a>
+        </section>
+        <!-- Bloc "Nouveau menu" -->
+        <section id="new-menu" class="second">
+            <h2>Nouveau menu Pimiento de Fuego</h2>
+            <a href="#">Voir le menu</a>
+        </section>
+        <!-- Bloc "Livraison" -->
+        <section id="livraison" class="second">
+            <h2>Livraison à domicile maintenant disponible</h2>
+            <a href="#">Commander</a>
+        </section>
+    </article>
+    <!-- Pied-de-page -->
+    <footer>
+        <section id="adress">
+            <h3>Nous contacter</h3>
+            <p>Chemin des Saules 19</p>
+            <p>2013 Colombier</p>
+            <p>+41 79 268 54 51</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.665392946913!2d6.865839015855837!3d46.96826393984701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478de054a2bd329b%3A0xd04d1487b263d6f1!2sChem.%20des%20Saules%2019%2C%202013%20Colombier!5e0!3m2!1sfr!2sch!4v1675778286984!5m2!1sfr!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social">
+            <a href="#"><img src="media/facebook.svg" alt="lien facebook"></a>
+            <a href="#"><img src="media/instagram.svg" alt="lien instagram"></a>
+            <a href="#"><img src="media/linkedin.svg" alt="lien linkedin"></a>
+        </section>
+        <p id="copyright">© EL Taco del Pablo - All rights reserved</p>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript">
+		function menu(){
+			var menu_mobile=document.getElementById("menu"); /* Sélectionne la balise ayant l'ID "menu" dans la variable menu_mobile */
+			menu_mobile.classList.toggle("open"); /* Applique ou retire la classe "open" à la balise sélectionné précédement */
+            var abso_open=document.getElementById("absolute"); /* Sélectionne la balise ayant l'ID "absolute" dans la variable abso_open */
+            abso_open.classList.toggle("open_a"); /* Applique ou retire la classe "open_a" à la balise sélectionné précédement */
+		}
+	</script>
+</body>
+</html>

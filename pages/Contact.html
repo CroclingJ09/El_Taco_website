@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de contact du restaurant">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nous contacter</title>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div id="logo"><a href="#main-contact"><img src="../media/logo.png" alt="Image logo"></a></div>
+        <div id="absolute">
+            <nav id="menu">
+                <ul>
+                    <li><a href="../Index.html">Accueil</a></li>
+                    <li><a href="Who_are_we.html">Qui sommes-nous?</a></li>
+                    <li><a href="Menu.html">Menus</a></li>
+                    <li><a href="Command.html">Commander</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="toggle" onClick="menu()">
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <article>
+        <!-- Bannière -->
+        <section id="main-contact" class="main">
+            <h1>Nous contacter</h1>
+        </section>
+        <!-- Formulaire -->
+        <section id="contact-block">
+            <h2>Nous envoyer un message</h2>
+            <form action="../Index.html" method="post" class="contact">
+                <input type="text" id="name" placeholder="Nom">
+                <input type="text" id="f-name" placeholder="Prénom">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <select name="subject" id="subject" required>
+                    <option value="default" selected disabled>Choisissez un sujet</option>
+                    <option value="book">Réservation</option>
+                    <option value="complain">Plainte</option>
+                    <option value="other">Autre</option>
+                </select>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Ecrivez votre message ici"></textarea>
+                <input type="submit" name="valid" id="send">
+            </form>
+        </section>
+    </article>
+    <!-- Pied-de-page -->
+    <footer>
+        <section id="adress">
+            <h3>Nous contacter</h3>
+            <p>Chemin des Saules 19</p>
+            <p>2013 Colombier</p>
+            <p>+41 79 268 54 51</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.665392946913!2d6.865839015855837!3d46.96826393984701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478de054a2bd329b%3A0xd04d1487b263d6f1!2sChem.%20des%20Saules%2019%2C%202013%20Colombier!5e0!3m2!1sfr!2sch!4v1675778286984!5m2!1sfr!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social">
+            <a href="#"><img src="../media/facebook.svg" alt="lien facebook"></a>
+            <a href="#"><img src="../media/instagram.svg" alt="lien instagram"></a>
+            <a href="#"><img src="../media/linkedin.svg" alt="lien linkedin"></a>
+        </section>
+        <p id="copyright">© EL Taco del Pablo - All rights reserved</p>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript">
+		function menu(){
+			var menu_mobile=document.getElementById("menu"); /* Sélectionne la balise ayant l'ID "menu" dans la variable menu_mobile */
+			menu_mobile.classList.toggle("open"); /* Applique ou retire la classe "open" à la balise sélectionné précédement */
+            var abso_open=document.getElementById("absolute"); /* Sélectionne la balise ayant l'ID "absolute" dans la variable abso_open */
+            abso_open.classList.toggle("open_a"); /* Applique ou retire la classe "open_a" à la balise sélectionné précédement */
+		}
+	</script>
+</body>
+</html>

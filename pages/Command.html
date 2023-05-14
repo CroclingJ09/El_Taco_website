@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de commande du restaurant">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Commander</title>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div id="logo"><a href="#main-who"><img src="../media/logo.png" alt="Image logo"></a></div>
+        <div id="absolute">
+            <nav id="menu">
+                <ul>
+                    <li><a href="../Index.html">Accueil</a></li>
+                    <li><a href="Who_are_we.html">Qui sommes-nous?</a></li>
+                    <li><a href="Menu.html">Menus</a></li>
+                    <li><a href="#">Commander</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="toggle" onClick="menu()">
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <article>
+        <!-- Bannière -->
+        <section id="main-who" class="main">
+            <h1>Commander</h1>
+        </section>
+        <!-- Formulaire -->
+        <section>
+            <form action="" id="form-command">
+                <h2>Informations Personnelles</h2>
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="text" name="f-name" placeholder="Prénom">
+                <input type="tel" name="phone" placeholder="Numéro de téléphone" required pattern="+41">
+                <input type="text" name="adress" placeholder="Adresse" id="" required>
+                <input type="number" name="npa" placeholder="NPA" id="npa" required min="2000" max="3000">
+                <input type="text" name="town" placeholder="Commune" id="town" required>
+                <h2>Best-Sellers</h2>
+                <label for="nb-beef-menu" class="label-menu">Menu Carne de Vacuno</label>
+                <input type="number" name="nb-beef-menu" max="5" placeholder="max.5" class="nb">
+                <label for="nb-pork-menu" class="label-menu">Menu Carne de Cerdo</label>
+                <input type="number" name="nb-pork-menu" max="5" placeholder="max.5" class="nb">
+                <label for="nb-chicken-menu" class="label-menu">Menu Carne de Pollo</label>
+                <input type="number" name="nb-chicken-menu" max="5" placeholder="max.5" class="nb">
+                <label for="nb-cheese-menu" class="label-menu">Menu Queso Grande</label>
+                <input type="number" name="nb-cheese-menu" max="5" placeholder="max.5" class="nb">
+                <h2>Nouveautés</h2>
+                <label for="nb-spicy-menu" class="label-menu">Menu Pimiento de Fuego</label>
+                <input type="number" name="nb-spicy-menu" max="5" placeholder="max.5" class="nb">
+                <label for="nb-fish-menu" class="label-menu">Menu Mar Abierto</label>
+                <input type="number" name="nb-fish-menu" max="5" placeholder="max.5" class="nb">
+                <h2>Menus familiaux</h2>
+                <label for="nb-beef-family-menu" class="label-menu">Menu Vacuno Familia</label>
+                <input type="number" name="nb-beef-family-menu" max="1" placeholder="max.1" class="nb">
+                <label for="nb-chicken-family-menu" class="label-menu">Menu Pollo Familia</label>
+                <input type="number" name="nb-chicken-family-menu" max="1" placeholder="max.1" class="nb">
+                <label for="nb-big-family-menu" class="label-menu">Menu Gran Familia</label>
+                <input type="number" name="nb-big-family-menu" max="1" placeholder="max.1" class="nb">
+                <h2>Tacos</h2>
+                <label for="nb-single-beef-menu" class="label-menu">Tacos Boeuf</label>
+                <input type="number" name="nb-single-beef-menu" max="10" placeholder="max.10" class="nb">
+                <label for="nb-single-pork-menu" class="label-menu">Tacos Porc</label>
+                <input type="number" name="nb-single-pork-menu" max="10" placeholder="max.10" class="nb">
+                <label for="nb-single-chicken-menu" class="label-menu">Tacos Poulet</label>
+                <input type="number" name="nb-single-chicken-menu" max="10" placeholder="max.10" class="nb">
+                <label for="nb-single-spicy-menu" class="label-menu">Tacos Piment</label>
+                <input type="number" name="nb-single-spicy-menu" max="10" placeholder="max.10" class="nb">
+                <label for="nb-single-fish-menu" class="label-menu">Tacos Poisson</label>
+                <input type="number" name="nb-single-fish-menu" max="10" placeholder="max.10" class="nb">
+                <h2>Suppléments</h2>
+                <label for="nb-fries" class="label-menu">Frites</label>
+                <input type="number" name="nb-fries" max="10" placeholder="max.10" class="nb">
+                <label for="nb-nachos" class="label-menu">Nachos</label>
+                <input type="number" name="nb-nachos" max="10" placeholder="max.10" class="nb">
+                <textarea name="other" id="" cols="30" rows="10" placeholder="Autres remarques"></textarea>
+                <input type="submit" value="Valider ma commande" id="send">
+            </form>
+        </section>
+    </article>
+    <!-- Pied-de-page -->
+    <footer>
+        <section id="adress">
+            <h3>Nous contacter</h3>
+            <p>Chemin des Saules 19</p>
+            <p>2013 Colombier</p>
+            <p>+41 79 268 54 51</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.665392946913!2d6.865839015855837!3d46.96826393984701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478de054a2bd329b%3A0xd04d1487b263d6f1!2sChem.%20des%20Saules%2019%2C%202013%20Colombier!5e0!3m2!1sfr!2sch!4v1675778286984!5m2!1sfr!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social">
+            <a href="#"><img src="../media/facebook.svg" alt="lien facebook"></a>
+            <a href="#"><img src="../media/instagram.svg" alt="lien instagram"></a>
+            <a href="#"><img src="../media/linkedin.svg" alt="lien linkedin"></a>
+        </section>
+        <p id="copyright">© EL Taco del Pablo - All rights reserved</p>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript">
+		function menu(){
+			var menu_mobile=document.getElementById("menu"); /* Sélectionne la balise ayant l'ID "menu" dans la variable menu_mobile */
+			menu_mobile.classList.toggle("open"); /* Applique ou retire la classe "open" à la balise sélectionné précédement */
+            var abso_open=document.getElementById("absolute"); /* Sélectionne la balise ayant l'ID "absolute" dans la variable abso_open */
+            abso_open.classList.toggle("open_a"); /* Applique ou retire la classe "open_a" à la balise sélectionné précédement */
+		}
+	</script>
+</body>
+</html>
